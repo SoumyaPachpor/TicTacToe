@@ -140,9 +140,7 @@ bl0 {
 
 bb0 {
     border-bottom: 0;
-}
-
-@media screen and (max-width: 900px) {
+}@media screen and (max-width: 900px) {
     nav {
         font-size: 2em;
         height: 50px;
@@ -154,9 +152,20 @@ bb0 {
         justify-content: center;
         align-items: center;
     }
+    .out{
+        height: 250px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{    
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
     .box{
-        width: 50px;
-        height: 50px;
-
+        
+        width: 70px;
+        height: 70px;
     }
 }
